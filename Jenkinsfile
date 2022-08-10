@@ -1,9 +1,11 @@
+pipeline {
+    agent any
 
-switch(
-    
-    
-) {
-    case CASE:
-        
-    break
+    stages {
+        stage('Very Branch') {
+            steps {
+                echo $GIT_BRANCH
+            }
+        }
+    }
 }
